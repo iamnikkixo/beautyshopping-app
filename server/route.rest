@@ -1,0 +1,77 @@
+// Register
+POST http://localhost:3000/api/users/register
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john.doe@gmail.com",
+  "password": "password"
+}
+
+###
+
+// Login
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+  "email": "admin@email.com",
+  "password": "adminPassword"
+}
+
+###
+
+// Add Cart
+POST http://localhost:3000/api/cart/add/660ea3924b761484d5a0b59f
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjBlNDJkNjFkYzk3MGIxYTNjYWRlY2EiLCJpYXQiOjE3MTIyODQwMzksImV4cCI6MTcxMjI4NzYzOX0.OQKBssIERs7h5Hbv6TllPuCq90kwZGpGMrmH6gwiuyY
+
+{
+  "quantity": 2
+}
+
+###
+
+
+
+### 
+// Checkout
+POST http://localhost:3000/api/checkout
+Content-Type: application/json
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjA4MGMyMjBkM2Q1ZGE4NTZjNTliNTciLCJpYXQiOjE3MTE4NzA0MTYsImV4cCI6MTcxMTg3NDAxNn0.94Ru3BWWS6NPZgxXZ3cHkIvtEGAJZUw_bZkbHTYP34U
+
+
+###
+// GET ALL ORDERS FOR ADMIN
+GET http://localhost:3000/api/orders
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjA4MGMyMjBkM2Q1ZGE4NTZjNTliNTciLCJpYXQiOjE3MTE4NzA0MTYsImV4cCI6MTcxMTg3NDAxNn0.94Ru3BWWS6NPZgxXZ3cHkIvtEGAJZUw_bZkbHTYP34U
+
+###
+
+// GET ALL orders for user
+GET http://localhost:3000/api/orders/66080c220d3d5da856c59b57
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjA4MGMyMjBkM2Q1ZGE4NTZjNTliNTciLCJpYXQiOjE3MTE4NzQwNDgsImV4cCI6MTcxMTg3NzY0OH0.0G1iuNDAnDzBxz8T7sBLEpeIm47lYMnrOuvgcvfoaY8
+
+
+###
+
+// GET 1 orders for user
+GET http://localhost:3000/api/orders/66080c220d3d5da856c59b57/660911500f1f0e6fb39c324b
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjA4MGMyMjBkM2Q1ZGE4NTZjNTliNTciLCJpYXQiOjE3MTE4NzQwNDgsImV4cCI6MTcxMTg3NzY0OH0.0G1iuNDAnDzBxz8T7sBLEpeIm47lYMnrOuvgcvfoaY8
+
+
+###
+// DELETE item from cart
+DELETE http://localhost:3000/api/cart/remove/660ea3924b761484d5a0b5a6
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjBlNDJkNjFkYzk3MGIxYTNjYWRlY2EiLCJpYXQiOjE3MTIyODQwMzksImV4cCI6MTcxMjI4NzYzOX0.OQKBssIERs7h5Hbv6TllPuCq90kwZGpGMrmH6gwiuyY
+
+### 
+// UPDATE ORDER
+PATCH http://localhost:3000/api/orders/update/660911500f1f0e6fb39c324b
+Authorization:  Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NjA4MGMyMjBkM2Q1ZGE4NTZjNTliNTciLCJpYXQiOjE3MTE4NzQwNDgsImV4cCI6MTcxMTg3NzY0OH0.0G1iuNDAnDzBxz8T7sBLEpeIm47lYMnrOuvgcvfoaY8
+Content-Type: application/json
+
+{
+  "status": "completed"
+}
