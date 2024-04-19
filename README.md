@@ -2,6 +2,7 @@
 
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" width="50" style="margin-right: 5px;" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" width="50" style="margin-right: 5px;" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" width="50" style="margin-right: 5px;" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg" width="50"  style="margin-right: 5px;"/>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/axios/axios-plain.svg" width="50"  />
@@ -96,6 +97,7 @@ This project is built using the following technologies:
 - **Description:** Handles order details and status.
 
 ## 🎨 UX/UI Design
+
 Inspired by the following designs:
 
 - [Beauty Product eCommerce App](https://dribbble.com/shots/18352075-Beauty-Product-eCommerce-App)
