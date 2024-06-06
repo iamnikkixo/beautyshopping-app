@@ -41,11 +41,17 @@ This project is built using the following technologies:
 
 ## ✨ Features
 
-- **Complete Screens**: Covers Login, Register, Main Product Display, Cart Management, Checkout Process, Detailed Product View, Favorites, Search Functionality, and User Profile with logout option.
-- **Redux State Management**: Utilizes Redux for efficient and centralized state management.
-- **JWT Authentication**: Uses JWT tokens to ensure secure and reliable authentication
-- **Platform Compatibility**: Android and iOS friendly for broad accessibility.
-- **Modern Design**: Incorporates modern design elements for a sleek and user-friendly experience.
+- **Comprehensive Sections**: Includes Hero, About, Accommodation, Experience (with sub-sections for Activities and Amenities), Gallery, Testimonials, Footer, and a Reservation Form.
+- **Responsiveness**: Fully mobile-responsive design ensuring optimal user experience on all devices.
+- **Secure Authentication**:
+  - Registration and login functionality using JWT tokens with local Passport strategy.
+  - Google authentication for convenient and secure user sign-in.
+- **Modern Design Trends**: Features contemporary design elements like parallax hero section and footer & bento grids that enhance visual appeal.
+- **Smart Reservation Form**: Automatically fills out parts of the reservation form with user information retained after login, streamlining the booking process.
+- **Reservation Confirmation**: Automated email confirmations to secure and confirm reservations.
+- **Toast Notifications**:
+  - Display toast messages/notifications for login, logout, and reservation actions.
+  - For reservations, the selected tent will automatically be chosen when you press "Reserve".
 
 ## 🚀 Quick Start
 
